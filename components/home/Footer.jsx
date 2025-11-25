@@ -86,6 +86,11 @@ import {
   imgEntypoOldPhone,
   imgIcomoonFreeMobile
 } from "@/lib/assets";
+import { IoMdMail } from "react-icons/io";
+import { GiRotaryPhone } from "react-icons/gi";
+import { ImMobile } from "react-icons/im";
+
+
 
 import ConnectWithUs from "./ConnectWithUs";
 
@@ -143,14 +148,16 @@ export default function Footer() {
           <p>Kottayam - 686001.</p>
 
           {/* Email */}
-          <div className="flex items-center gap-2 mt-4">
-            <img src={imgMaterialSymbolsLightMail} className="w-6 h-6" />
+          <div className="flex items-center gap-2 mt-4 leading-10">
+            <IoMdMail  size={24}/>
+
             <p>spcsktm@gmail.com</p>
           </div>
 
           {/* Phone */}
-          <div className="flex items-start gap-2 mt-2">
-            <img src={imgEntypoOldPhone} className="w-6 h-6" />
+          <div className="flex items-start gap-2 mt-2 ">
+            <GiRotaryPhone  size={26}/>
+
             <div>
               <p>0481-2301812</p>
               <p>0481-2564111</p>
@@ -158,8 +165,9 @@ export default function Footer() {
           </div>
 
           {/* Mobile */}
-          <div className="flex items-center gap-2 mt-2">
-            <img src={imgIcomoonFreeMobile} className="w-6 h-6" />
+          <div className="flex items-center gap-2 mt-2 leading-14">
+            <ImMobile size={22} />
+
             <p>+919048397101</p>
           </div>
         </div>
